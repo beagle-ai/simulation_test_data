@@ -1,0 +1,21 @@
+
+system:
+  camera: sim
+  controller: celery
+  actuator: sim
+
+controllers:
+  right:
+    camera:
+      serial_no: 0
+    actuator:
+      canid: 1
+
+celery:
+  grid_angle_top: 55 #  in degree
+
+replay:
+  path: "/home/beagle/beagle_ssd/celery"
+sim:
+  model: visualservo
+  image_path: "/home/beagle/celery_images"    
